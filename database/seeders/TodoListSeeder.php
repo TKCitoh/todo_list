@@ -1,19 +1,21 @@
 <?php
-
+ 
 namespace Database\Seeders;
-
+ 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
-use Illuminate\Support\Facades\DB; 
-
+use Illuminate\Support\Facades\DB; //追記
+ 
 class TodoListSeeder extends Seeder
 {
-    /**
-     * Run the database seeds.
-     */
-    public function run()
+  /**
+   * Run the database seeds.
+   *
+   * @return void
+   */
+  public function run()
   {
-    DB::table('lists')->insert(
+    DB::table('todo_lists')->insert(
       [
         [
           'name' => 'テスト1',
@@ -34,3 +36,4 @@ class TodoListSeeder extends Seeder
     );
   }
 }
+ 
