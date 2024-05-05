@@ -2,7 +2,7 @@
 module.exports = {
   content: [
       "./resources/views/todo_list/index.blade.php",
-      // "./resources/**/*.js",
+      "./resources/views/tasks/index.blade.php",
       // "./resources/**/*.vue",
   ],
   theme: {
